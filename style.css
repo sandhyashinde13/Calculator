@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Calculator Box */
+.calculator {
+    background: #ffffffcc;
+    padding: 25px;
+    border-radius: 25px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+h2 {
+    color: #ff5d8f;
+    margin-bottom: 15px;
+}
+
+/* Display */
+#display {
+    width: 100%;
+    height: 45px;
+    font-size: 22px;
+    border-radius: 12px;
+    border: none;
+    text-align: right;
+    padding-right: 10px;
+    margin-bottom: 15px;
+    background: #f1f1f1;
+}
+
+/* Operators */
+.operators {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.op {
+    background: #ffd6a5;
+}
+
+.clear {
+    background: #ffadad;
+}
+
+/* Numbers */
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* Buttons */
+button {
+    height: 45px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    background: #cdb4db;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Equal Button */
+.equal {
+    background: #bde0fe;
+    font-weight: bold;
+}
